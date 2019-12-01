@@ -1,0 +1,18 @@
+Single Cycle Check
+
+Check if there is a single cycle in a given non empty array. Each element of the array represents a jump (forward or backward). 
+
+For example: a = [1,-2,1]
+a[0] is telling us to take a forward jump of 1 place landing on -2.
+
+Also, if the jump is going out of bound of array you will have to wrap it and start from the other side of the array.
+
+In above case, after jumping on -2, we have to jump backward 2 places. As there is only one jump possible in backward, we will take the remaining jump from the other end of the array, which is a[2].
+
+Cycle condition:
+
+An array is said to have a single cycle, if starting at any random point i, every element of the array gets exactly one visit and we end up were we started.
+
+In above example, we have a single cycle. Sarting from index 0 we reach at index 0 by jumping on other elements exactly ones.
+
+If single cycle found, return True and False otherwise.
