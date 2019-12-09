@@ -1,5 +1,6 @@
 .installed.cfg
-.pyc
+*.cpython-36.pyc
+*.pyc
 bin
 develop-eggs
 dist

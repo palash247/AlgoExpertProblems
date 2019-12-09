@@ -1,0 +1,5 @@
+Min Max stack construction
+
+Construct a stack which can perfrom normal stack operation along with the two min max. At any point for any size of stack, the min max operation should have a constant execution time.
+
+
