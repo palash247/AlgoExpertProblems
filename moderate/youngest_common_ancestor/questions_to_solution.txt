@@ -1,0 +1,5 @@
+1. When will this problem will be very easy to solve?
+-> If the two nodes provided are on the same level
+
+2. Can you make them on same level?
+-> Yes
