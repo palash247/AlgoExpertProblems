@@ -1,0 +1,8 @@
+1. How many pointers you will need to delete the kth node from the end of the linked list?
+-> Two
+
+2. Is it possible to do it in a single pass through the linked list?
+-> Yes
+
+3. How to do it in single pass?
+->  First, you make a scale of length k with two pointers at each end. The first end of the scale will be at head, and second head will be at kth node from the head. Now, you slide the scale node by node until the second pointer touches the tail of the linked list. Now, the first pointer is pointing to the (k-1)th node. And you can easily delete the kth node.
