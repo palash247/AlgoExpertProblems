@@ -1,0 +1,27 @@
+1. How/When can you reject an entire row?
+> If the target is greater than the last element of the row you can eliminate the entire row.
+
+2. When can you eliminate the entire column?
+> If the last element of the column is greater than the target.
+
+3. What happens if you try to compare target with all the four corners of the matrix?
+
+> At [0,0],
+    If target < matrix[0,0], the element can't exist in the entire matrix.
+    If target == matrix[0,0], return [0,0]
+    If target > matrix[0,0], the target may exist anywhere in the rest of the matrix
+
+> At [max_row, max_column],
+    If target == matrix[max_row, max_column], return [max_cow, max_column] 
+    If target < matrix[max_row, max_column], it can exist anywhere in the rest of the matrix
+    If target > matrix[max_row, max_column], it does not exist in the matrix
+
+> At [0, max_column],
+    If target == matrix[0, max_column], return [0, max_column]
+    If target < matrix[0, max_column], it can not exist in the first row
+    If target > matrix[0, max_column], it can not exist in the last column
+
+> At [max_row, 0],
+    If target == matrix[max_row, 0], return it [max_row, 0]
+    If target < matrix[max_row, 0], it can not exist on the last row
+    If target > matrix[max_row, 0], it can not exist on the first column    
